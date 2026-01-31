@@ -149,8 +149,15 @@
         }
 
         @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-20px); }
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
         }
 
         .profile-card img {
@@ -181,7 +188,9 @@
         }
 
         @keyframes shine {
-            to { background-position: 200% center; }
+            to {
+                background-position: 200% center;
+            }
         }
 
         /* --- BUTTONS --- */
@@ -309,7 +318,9 @@
             font-weight: bold;
         }
 
-        .project-card.active .close-btn { display: flex; }
+        .project-card.active .close-btn {
+            display: flex;
+        }
 
         .link-pdf {
             color: var(--accent);
@@ -319,7 +330,9 @@
             transition: 0.3s;
         }
 
-        .link-pdf:hover { border-bottom: 1px solid var(--accent); }
+        .link-pdf:hover {
+            border-bottom: 1px solid var(--accent);
+        }
 
         .reveal {
             opacity: 0;
@@ -339,14 +352,25 @@
                 padding-top: 150px;
                 text-align: center;
             }
-            .hero-content { max-width: 100%; }
-            .skills-container { justify-content: center; }
-            .profile-card { max-width: 300px; margin-bottom: 50px; }
+
+            .hero-content {
+                max-width: 100%;
+            }
+
+            .skills-container {
+                justify-content: center;
+            }
+
+            .profile-card {
+                max-width: 300px;
+                margin-bottom: 50px;
+            }
         }
     </style>
 </head>
 
 <body>
+
     <div class="bg-glow"></div>
     <div class="cursor-outer"></div>
     <div class="cursor-inner"></div>
@@ -354,24 +378,31 @@
     <nav>
         <div class="logo">HERIKA<span>.</span>DEV</div>
         <div class="nav-contact">
-            <a href="https://www.linkedin.com/in/herika-risky-dinanti-4156921b5/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=herikariskidinanti3232@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-            <a href="https://wa.me/6287743222503" target="_blank"><i class="fa-solid fa-phone"></i></a>
+            <a href="https://www.linkedin.com/in/herika-risky-dinanti-4156921b5/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=herikariskidinanti3232@gmail.com" target="_blank">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://wa.me/6287743222503" target="_blank">
+                <i class="fa-solid fa-phone"></i>
+            </a>
         </div>
     </nav>
 
     <section class="hero">
         <div class="hero-content">
-            <div class="reveal" style="color: var(--accent); font-weight: 700; margin-bottom: 15px; letter-spacing: 2px;">
+            <div class="reveal"
+                style="color: var(--accent); font-weight: 700; margin-bottom: 15px; letter-spacing: 2px;">
                 FRESH GRADUATE S1 TEKNIK INFORMATIKA
             </div>
             <h1 class="reveal">Herika Risky <span class="gradient-text">Dinanti.</span></h1>
             <p class="reveal" style="color: var(--text-dim); line-height: 1.8; font-size: 1.1rem;">
                 Lulusan IIB Darmajaya (IPK 3.76) dengan minat kuat pada <strong>Data Analytics</strong> dan <strong>Data
-                Science</strong>. Berpengalaman mengolah dataset operasional, analisis produktivitas (WLA/TMS), dan machine learning menggunakan Python & SQL.
+                    Science</strong>. Berpengalaman mengolah dataset operasional, analisis produktivitas (WLA/TMS), dan
+                machine learning menggunakan Python & SQL.
             </p>
 
-            <a href="cvku.pdf" target="_blank" class="btn-cv reveal">
+            <a href="Herika Risky Dinanti-resume (20).pdf" target="_blank" class="btn-cv reveal">
                 LIHAT DETAIL PEKERJAAN (PDF) <i class="fa-solid fa-file-pdf"></i>
             </a>
 
@@ -394,6 +425,7 @@
 
     <section id="projects" class="projects">
         <h2 class="reveal" style="font-size: 2.5rem; margin-bottom: 50px;">Detailed Experiences</h2>
+
         <div class="project-grid">
             <div class="project-card reveal" onclick="expandCard(this)">
                 <div class="close-btn" onclick="closeCard(event, this)">×</div>
@@ -406,37 +438,99 @@
                 </div>
                 <div class="project-detail">
                     <ul class="detail-list">
-                        <li><i class="fa-solid fa-circle-check"></i> Melakukan Time Motion Study (TMS) dan Workload Analysis (WLA) berbasis data.</li>
-                        <li><i class="fa-solid fa-circle-check"></i> Memberikan rekomendasi strategis penempatan tenaga kerja ke tim HR.</li>
-                        <li><i class="fa-solid fa-circle-check"></i> Menganalisis produktivitas karyawan menggunakan metode kuantitatif.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Melakukan Time Motion Study (TMS) dan Workload
+                            Analysis (WLA) berbasis data.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Memberikan rekomendasi strategis penempatan tenaga
+                            kerja ke tim HR.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Menganalisis produktivitas karyawan menggunakan
+                            metode kuantitatif.</li>
                         <li><i class="fa-solid fa-circle-check"></i> Menyusun laporan visualisasi data operasional.</li>
                     </ul>
                 </div>
                 <p style="margin-top: 20px; font-size: 0.85rem;">
-                    <a href="cvku.pdf" target="_blank" class="link-pdf" onclick="event.stopPropagation()">
+                    <a href="Herika Risky Dinanti-resume (20).pdf" target="_blank" class="link-pdf"
+                        onclick="event.stopPropagation()">
                         Buka Detail di CV (PDF) <i class="fa-solid fa-arrow-up-right-from-square"></i>
                     </a>
                 </p>
             </div>
+
+            <div class="project-card reveal" onclick="expandCard(this)">
+                <div class="close-btn" onclick="closeCard(event, this)">×</div>
+                <div style="display: flex; align-items: center; gap: 20px;">
+                    <i class="fa-solid fa-laptop-code" style="font-size: 2.5rem; color: var(--secondary);"></i>
+                    <div>
+                        <h3 style="font-size: 1.4rem;">Asisten Laboratorium Komputer</h3>
+                        <p style="color: var(--accent); font-weight: 700;">IIB DARMAJAYA • 2022 - 2024</p>
+                    </div>
+                </div>
+                <div class="project-detail">
+                    <ul class="detail-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Membimbing 30+ mahasiswa praktikum web.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Mengelola instalasi software laboratorium.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Troubleshooting sistem pengembangan web.</li>
+                    </ul>
+                </div>
+                <p style="margin-top: 20px; font-size: 0.85rem;">
+                    <a href="Herika Risky Dinanti-resume (20).pdf" target="_blank" class="link-pdf"
+                        onclick="event.stopPropagation()">
+                        Buka Detail di CV (PDF) <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </p>
             </div>
+
+            <div class="project-card reveal" onclick="expandCard(this)">
+                <div class="close-btn" onclick="closeCard(event, this)">×</div>
+                <div style="display: flex; align-items: center; gap: 20px;">
+                    <i class="fa-solid fa-users-gear" style="font-size: 2.5rem; color: #ff9900;"></i>
+                    <div>
+                        <h3 style="font-size: 1.4rem;">Sekretaris Umum - BEM IIB</h3>
+                        <p style="color: var(--accent); font-weight: 700;">ORGANISASI • 2022 - 2023</p>
+                    </div>
+                </div>
+                <div class="project-detail">
+                    <ul class="detail-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Mengelola administrasi digital dan pengarsipan.
+                        </li>
+                        <li><i class="fa-solid fa-circle-check"></i> Menyusun laporan kegiatan berbasis data.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Mengatur jadwal kegiatan organisasi.</li>
+                    </ul>
+                </div>
+                <p style="margin-top: 20px; font-size: 0.85rem;">
+                    <a href="Herika Risky Dinanti-resume (20).pdf" target="_blank" class="link-pdf"
+                        onclick="event.stopPropagation()">
+                        Buka Detail di CV (PDF) <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </p>
+            </div>
+        </div>
     </section>
 
     <footer style="padding: 100px 10%; text-align: center; background: rgba(255,255,255,0.02);">
         <h2 class="reveal" style="font-size: 2.5rem; margin-bottom: 20px;">Contact Herika</h2>
         <p class="reveal" style="color: var(--text-dim); margin-bottom: 40px;">Bawa efisiensi berbasis data ke perusahaan Anda.</p>
-        <div class="reveal" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=herikariskidinanti3232@gmail.com" target="_blank" style="padding: 15px 40px; border: 1px solid var(--accent); color: white; text-decoration: none; border-radius: 50px; font-weight: bold; transition: 0.3s; display: inline-flex; align-items: center; gap: 10px;">
+        
+        <div class="reveal" style="position: relative; z-index: 10; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+            
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=herikariskidinanti3232@gmail.com" 
+               target="_blank"
+               style="padding: 15px 40px; border: 1px solid var(--accent); color: white; text-decoration: none; border-radius: 50px; font-weight: bold; transition: 0.3s; display: inline-flex; align-items: center; gap: 10px;">
                <i class="fa-solid fa-envelope"></i> KIRIM EMAIL
             </a>
-            <a href="https://wa.me/6287743222503" target="_blank" style="padding: 15px 40px; border: 1px solid #25D366; color: white; text-decoration: none; border-radius: 50px; font-weight: bold; transition: 0.3s; display: inline-flex; align-items: center; gap: 10px;">
+
+            <a href="https://wa.me/6287743222503" 
+               target="_blank"
+               style="padding: 15px 40px; border: 1px solid #25D366; color: white; text-decoration: none; border-radius: 50px; font-weight: bold; transition: 0.3s; display: inline-flex; align-items: center; gap: 10px;">
                <i class="fa-brands fa-whatsapp"></i> HUBUNGI WHATSAPP
             </a>
+
         </div>
     </footer>
 
     <script>
         const cursorOuter = document.querySelector('.cursor-outer');
         const cursorInner = document.querySelector('.cursor-inner');
+
         window.addEventListener('mousemove', (e) => {
             cursorInner.style.left = e.clientX + 'px';
             cursorInner.style.top = e.clientY + 'px';
@@ -461,7 +555,9 @@
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('active'); });
         }, { threshold: 0.1 });
+
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
     </script>
 </body>
+
 </html>
